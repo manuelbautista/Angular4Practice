@@ -11,6 +11,7 @@ export class DropdownDirective{
 
   }
   @HostListener('click') toggleOpen(){
+    debugger;
     this.isOpen = !this.isOpen;
 
   }
