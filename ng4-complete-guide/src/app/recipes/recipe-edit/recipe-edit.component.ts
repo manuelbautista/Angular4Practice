@@ -18,6 +18,9 @@ export class RecipeEditComponent implements OnInit {
               private recipeService: RecipeService,
               private router: Router) { }
 
+  getIngredients() {
+    return (<FormArray>this.recipeForm.get('ingredients'));
+  }
   onSubmit() {
     // const newRecipe = new Recipe(
     //   this.recipeForm.value['name'],
